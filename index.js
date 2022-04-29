@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
-
-const generateReadme = require("./generateReadme.js");
+const { writeFile } = require("./generateReadme");
+const generateReadme = require("./ReadMeTemplate.js");
 const promptUser = () => {
   return inquirer.prompt([
     {
@@ -88,7 +88,13 @@ const promptUser = () => {
       type: "checkbox",
       name: "license",
       message: "Select one license that you want to be applied to your project",
-      choices: ["MIT License", "GNU GPLv3", "Apache License 2.0"],
+      choices: [
+        "MIT License",
+        "GNU GPLv3",
+        "Apache License 2.0",
+        "Mozilla Public License 2.0",
+        "GNU LGPLv3",
+      ],
     },
     {
       type: "input",
@@ -98,13 +104,24 @@ const promptUser = () => {
     },
     {
       type: "input",
+      name: "tests",
+      message: "Please provide the user with some test instructions",
     },
     //     {}
     //     },
   ]);
 };
 // TODO: Create an array of questions for user input
-promptUser();
+promptUser()
+  .then((templateData) => {
+    return generateReadme(templateData);
+  })
+  .then((pageHTML) => {
+    return writeFile(pageHTML);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // TODO: Create a function to write README file
 

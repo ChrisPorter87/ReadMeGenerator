@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ChrisPorter87/ReadMeGenerator#readme",
   "dependencies": {
-    "inquirer": "^8.2.2"
+    "inquirer": "^8.2.4"
   }
 }

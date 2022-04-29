@@ -1,24 +1,20 @@
 const fs = require("fs");
-const generateAbout = (aboutText) => {
-  if (!aboutText) {
-    return "";
-  }
-  return `
-    # ${projectname}
 
-## GitHub user name
-${githubName}
-
-## Purpose
-${aboutProject}.
-
-## Built With
-${languages}
-
-## Website
-${fs.link}
-
-## Contribution
-Made with ❤️ by ${yourName}
-    `;
+const writeFile = (fileContent) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile("./dist/readme.md", fileContent, (err) => {
+      //if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
+      if (err) {
+        reject(err);
+        return;
+      }
+      resolve({
+        ok: true,
+        message: "File created!",
+      });
+    });
+  });
+};
+module.exports = {
+  writeFile,
 };
