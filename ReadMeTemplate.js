@@ -1,40 +1,42 @@
 const { createReadMeModule } = require("inquirer");
-const generateReadme = (aboutText) => {
+const generateText = (aboutText) => {
   if (!aboutText) {
     return "";
   }
   module.exports = (templateData) => {
-    console.log(templateData);
+    console.log("TEMPLATE DATA", templateData);
     return `
- # ${this.name} 
-## Table of Contents 
-##[Description] (#description) 
-##[Usage] (#usage) 
-##[Tests] (#tests) 
-##[Licenses] (#licenses) 
-##[Installation] (#installation) 
-##[Contribution] (#contribution) 
+ # ${templateData.projectname}
+ <img src=“https://img.shields.io/badge/license-${templateData.license}-blue.svg” />
+## Table of Contents
+##[Description] (#description)
+##[Usage] (#usage)
+##[Tests] (#tests)
+##[License] (#license)
+##[Installation] (#installation)
+##[Contribution] (#contribution)
 ## GitHub user name
-${this.githubName}
+${templateData.githubName}
 
 ## Description
-${this.about}.
+${templateData.about}.
 
 ## Usage
-${this.usage}.
+${templateData.usage}.
 
 ## Installation Instructions
-${this.installation}
+${templateData.installation}
 
 ## Tests
-${this.tests}
+${templateData.tests}
 
-##Licenses
-${this.licenses}
+##License
+${templateData.license}
 
 ## Contribution
-${this.contribution}
-Made with ❤️ by ${this.userName}
+${templateData.contribution}
+Made with ❤️ by ${templateData.userName}
     `;
   };
 };
+generateText("test");

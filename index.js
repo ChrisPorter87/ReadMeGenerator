@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const { writeFile } = require("./generateReadme");
-const generateReadme = require("./ReadMeTemplate.js");
+const generateReadme = require("./ReadMeTemplate");
 const promptUser = () => {
   return inquirer.prompt([
     {
