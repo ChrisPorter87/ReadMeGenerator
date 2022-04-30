@@ -9,13 +9,13 @@ const generateText = (aboutText) => {
  # ${templateData.projectname}
  <img src=“https://img.shields.io/badge/license-${templateData.license}.svg” />
 ## Table of Contents
-##[Description] (#description)
-##[Usage] (#usage)
-##[Tests] (#tests)
-##[License] (#license)
-##[Installation] (#installation)
-##[Contribution] (#contribution)
-## GitHub user name
+-[Description] (#description)
+-[Usage] (#usage)
+-[Tests] (#tests)
+-[License] (#license)
+-[Installation] (#installation)
+-[Contribution] (#contribution)
+- GitHub user name
 ${templateData.githubName}
 
 ## Description
@@ -39,4 +39,5 @@ Made with ❤️ by ${templateData.userName}
     `;
   };
 };
+// module.exports = generateText;
 generateText("test");
