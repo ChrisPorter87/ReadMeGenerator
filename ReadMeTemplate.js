@@ -7,7 +7,7 @@ const generateText = (aboutText) => {
     console.log("TEMPLATE DATA", templateData);
     return `
  # ${templateData.projectname}
- ![badge](https://img.shields.io/badge/license-${templateData.license}-brightgreen)<br />
+ <img src=“https://img.shields.io/badge/license-${templateData.license}.svg” />
 ## Table of Contents
 ##[Description] (#description)
 ##[Usage] (#usage)

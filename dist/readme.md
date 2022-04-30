@@ -1,6 +1,6 @@
 
- # gruneeldjo
- ![badge](https://img.shields.io/badge/license-GNU LGPLv3-brightgreen)<br />
+ # ReadMeGenerator
+ <img src=“https://img.shields.io/badge/license-MIT License.svg” />
 ## Table of Contents
 ##[Description] (#description)
 ##[Usage] (#usage)
@@ -9,24 +9,24 @@
 ##[Installation] (#installation)
 ##[Contribution] (#contribution)
 ## GitHub user name
-hee hee
+ChrisPorter87
 
 ## Description
-nah .
+It is a professional ReadMe generator created using node.js with the inquirer package. Through the terminal a user can input information which will in turn create a professional read me file..
 
 ## Usage
-nah.
+It would be used by a developer.
 
 ## Installation Instructions
-ok
+You will need to install the inquirer pacakge, along with node.js
 
 ## Tests
-fefe
+You can test the Readme generator.
 
 ##License
-GNU LGPLv3
+MIT License
 
 ## Contribution
-eaere
-Made with ❤️ by orale
+They can clone the repo from my github.
+Made with ❤️ by Chris Porter
     
