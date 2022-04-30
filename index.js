@@ -89,11 +89,11 @@ const promptUser = () => {
       name: "license",
       message: "Select one license that you want to be applied to your project",
       choices: [
-        "MIT License",
-        "GNU GPLv3",
-        "Apache License 2.0",
-        "Mozilla Public License 2.0",
-        "GNU LGPLv3",
+        "MIT",
+        "GNU_GPLv3",
+        "Apache_License_2.0",
+        "Mozilla_Public_License_2.0",
+        "GNU_LGPLv3",
       ],
     },
     {

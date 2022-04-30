@@ -1,6 +1,6 @@
 
- # asfasfa
- ![Badge](https://img.shields.io/badge/license-MIT License-blue.svg)
+ # asfasfs
+ ![Badge](https://img.shields.io/badge/license-GNU_LGPLv3-blue.svg)
 ## Table of Contents
 * [Description](#description)
 * [Usage](#usage)
@@ -12,21 +12,21 @@
 fasfasf
 
 ## Description
-asfasf.
+affasf.
 
 ## Usage
-afas.
+afsfaf.
 
 ## Installation
-asfasf
+afsfasf
 
 ## Tests
 asfasf
 
 ##License
-MIT License
+GNU_LGPLv3
 
 ## Contribution
-asfasf
-Made with ❤️ by afsasfa
+asfasfas
+Made with ❤️ by aff
     
