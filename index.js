@@ -85,7 +85,7 @@ const promptUser = () => {
       },
     },
     {
-      type: "checkbox",
+      type: "list",
       name: "license",
       message: "Select one license that you want to be applied to your project",
       choices: [
