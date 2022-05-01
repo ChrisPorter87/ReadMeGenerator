@@ -33,12 +33,12 @@ const promptUser = () => {
     {
       type: "input",
       name: "githubName",
-      message: "What is your GitHub username? (Required)",
+      message: "Please enter the link to your GitHub account (Required)",
       validate: (githubName) => {
         if (githubName) {
           return true;
         } else {
-          console.log("Please enter your GitHubt username!");
+          console.log("Please enter your Github account link!");
           return false;
         }
       },
@@ -109,6 +109,11 @@ const promptUser = () => {
     },
     //     {}
     //     },
+    {
+      type: "input",
+      name: "email",
+      message: "Please enter your email address",
+    },
   ]);
 };
 // TODO: Create an array of questions for user input

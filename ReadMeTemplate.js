@@ -15,7 +15,8 @@ const generateText = (aboutText) => {
 * [License](#license)
 * [Installation](#installation)
 * [Contribution](#contribution)
-* GitHub user name
+* [Questions](#questions)
+* [GitHub Name] (#githubName)
 ${templateData.githubName}
 
 ## Description
@@ -30,8 +31,14 @@ ${templateData.installation}
 ## Tests
 ${templateData.tests}
 
-##License
+## License
+![Badge](https://img.shields.io/badge/license-${templateData.license}-blue.svg)
 ${templateData.license}
+
+## Questions
+Here you will find my email address, where I can be reached, as well as my GitHub user name.
+${templateData.email} <br>
+<a href="${templateData.githubName}></a>
 
 ## Contribution
 ${templateData.contribution}
